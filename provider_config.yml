@@ -34,7 +34,7 @@ eureka:
       defaultZone: http://localhost:2004/eureka
 
 info:
-  groupId: com.javaxl.testSpringcloud
+  groupId: com.zhouzhuolin.testSpringcloud
   artifactId: microservice-student-provider-config-1007
   version: 1.0-SNAPSHOT
   userName: http://zhouzhuolin.com
