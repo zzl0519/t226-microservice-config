@@ -15,9 +15,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123
+    url: jdbc:mysql://localhost:3306/mybatis_ssm?useUnicode=true&characterEncoding=utf8
+    username: mybatis_ssm
+    password: xiaoli
   jpa:
     hibernate:
       ddl-auto: update
@@ -25,19 +25,19 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
-    appname: microservice-student
-    instance-id: microservice-student:1007
-    prefer-ip-address: true
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: microservice-student  #客户端服务名
+    instance-id: microservice-student:1007 #客户端实例名称
+    prefer-ip-address: true #显示IP
   client:
     service-url:
-      defaultZone: http://localhost:2004/eureka
+      defaultZone: http://localhost:2004/eureka   #把服务注册到eureka注册中心
 
 info:
-  groupId: com.zhouzhuolin.testSpringcloud
+  groupId: com.javaxl.testSpringcloud
   artifactId: microservice-student-provider-config-1007
   version: 1.0-SNAPSHOT
-  userName: http://zhouzhuolin.com
+  userName: http://javaxl.com
   phone: 123456
 ---
 server:
@@ -52,9 +52,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123
+    url: jdbc:mysql://localhost:3306/mybatis_ssm?useUnicode=true&characterEncoding=utf8
+    username: mybatis_ssm
+    password: xiaoli
   jpa:
     hibernate:
       ddl-auto: update
@@ -62,17 +62,17 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
-    appname: microservice-student
-    instance-id: microservice-student:1008
-    prefer-ip-address: true
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: microservice-student  #客户端服务名
+    instance-id: microservice-student:1008 #客户端实例名称
+    prefer-ip-address: true #显示IP
   client:
     service-url:
-      defaultZone: http://localhost:2004/eureka
+      defaultZone: http://localhost:2004/eureka   #把服务注册到eureka注册中心
 
 info:
-  groupId: com.zhouzhuolin.testSpringcloud
+  groupId: com.javaxl.testSpringcloud
   artifactId: microservice-student-provider-config-1008
   version: 1.0-SNAPSHOT
-  userName: http://zhouzhuolin.com
+  userName: http://javaxl.com
   phone: 123456
